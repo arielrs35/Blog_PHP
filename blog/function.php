@@ -25,7 +25,7 @@ function pagina_actual(){// Nos permitirá saber en que página estamos.
 function obtener_post($post_por_pagina, $conexion){
 
 	$inicio = (pagina_actual() > 1) ? pagina_actual() * $post_por_pagina - $post_por_pagina : 0;
-	$sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT $inicio, $post_por_pagina");
+	$sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos ORDER BY id DESC  LIMIT $inicio, $post_por_pagina");
 	$sentencia->execute();
 	return $sentencia->fetchAll();
 }

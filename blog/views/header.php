@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href='https://font.googleapis.com/css?family=Open+Sans'>
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="<?php echo RUTA; ?>/css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo RUTA; ?>/css/estilos.css?pepito">
 
 	<title>Blog</title>
 
@@ -16,7 +16,7 @@
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
-				<p><a href="<?php echo RUTA; ?> ">Mi primer blog</a></p>
+				<p><a href="<?php echo RUTA; ?> ">Blog De compras en Japon</a></p>
 			</div>
 			<div class="derecha">
 				<form class="buscar" name="busqueda" action="<?php echo RUTA; ?>/buscar.php " method="get">
@@ -26,7 +26,7 @@
 				<nav class="menu">
 					<ul>
 						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://www.facebook.com/De-compras-en-Jap%C3%B3n-1103517709731849/"><i class="fab fa-facebook-square"></i></a></li>
 						<li><a href="#">Contacto <i class="fa fa-envelope"></i></a></li>
 						<?php if (isset($_SESSION['admin'])): ?>
 							<li><a href="<?php echo 	RUTA ?>/admin/index.php" >Hola: <?php echo $_SESSION['admin'] ?></a></li>
@@ -36,6 +36,14 @@
 						
 					</ul>
 				</nav>
+			</div><br/>
+			<div class="menu">
+				<a class="btnmenu" href="<?php echo RUTA; ?> ">INICIO BLOG</a>
+				<a class="btnmenu" href="https://decomprasenjapon.com">TIENDA</a>
+				<a class="btnmenu" href="#">GALERIA DE FOTOS</a>
+				<a class="btnmenu" href="#">SOBRE NOSOTROS</a>
 			</div>
+
 		</div>
+		
 	</header>

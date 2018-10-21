@@ -2,6 +2,7 @@
 
 	<div class="contenedor">
 		<div class="post">
+			<article>
 			<h2 class="titulo"><?php echo $post['titulo']; ?></h2>
 			<p class="fecha"><?php echo fecha($post['fecha']); ?></p>
 			<div class="thumb">
@@ -11,7 +12,7 @@
 			</div>
 			<!-- nl2br permite que nos respeten los espaceados en los parrafos -->
 			<p class="extract"><?php echo nl2br($post['texto']); ?></p>
-			
+			</article>
 		</div>
 
 		
